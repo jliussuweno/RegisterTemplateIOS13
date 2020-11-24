@@ -7,6 +7,7 @@
 //
 
 @import UIKit;
+@import RegisterTemplateIOS13;
 
 @interface JEJEViewController : UIViewController
 

@@ -1,0 +1,16 @@
+PODS:
+  - RegisterTemplateIOS13 (0.1.0)
+
+DEPENDENCIES:
+  - RegisterTemplateIOS13 (from `../`)
+
+EXTERNAL SOURCES:
+  RegisterTemplateIOS13:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RegisterTemplateIOS13: a0d26d94b6a7d7abbafb617f7d5f98e984ebea20
+
+PODFILE CHECKSUM: 01f112dfac21bfe76a7414f1e6dc47eb67db40ef
+
+COCOAPODS: 1.10.0

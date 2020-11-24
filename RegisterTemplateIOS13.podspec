@@ -28,9 +28,13 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/jliussuweno/RegisterTemplateIOS13.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '13.0'
 
-  s.source_files = 'RegisterTemplateIOS13/Classes/**/*'
+#  s.source_files = 'Classes/**/*'
+  
+  s.source_files = 'Classes/**/*.{h,m}'
+  s.resources = 'Classes/**/*.{xcassets,json,storyboard,xib,xcdatamodeld}'
+  
   
   # s.resource_bundles = {
   #   'RegisterTemplateIOS13' => ['RegisterTemplateIOS13/Assets/*.png']

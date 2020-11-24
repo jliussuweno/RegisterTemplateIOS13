@@ -38,9 +38,9 @@
 
 /* Begin PBXFileReference section */
 		14560477156B2A0757C1A5BD /* Pods-RegisterTemplateIOS13_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegisterTemplateIOS13_Tests.debug.xcconfig"; path = "Target Support Files/Pods-RegisterTemplateIOS13_Tests/Pods-RegisterTemplateIOS13_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		1E6E9DD48E361C66D5EE52DC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1E6E9DD48E361C66D5EE52DC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		402580B5B9FEAD51E8C91D06 /* Pods-RegisterTemplateIOS13_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegisterTemplateIOS13_Tests.release.xcconfig"; path = "Target Support Files/Pods-RegisterTemplateIOS13_Tests/Pods-RegisterTemplateIOS13_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		5C20C70ADD54E53B2564B111 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5C20C70ADD54E53B2564B111 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* RegisterTemplateIOS13_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegisterTemplateIOS13_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,7 +62,7 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		748C625EEE11DF92EDE93BBC /* Pods_RegisterTemplateIOS13_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RegisterTemplateIOS13_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		84911E6E5F8EFA4FA4B0D5ED /* RegisterTemplateIOS13.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RegisterTemplateIOS13.podspec; path = ../RegisterTemplateIOS13.podspec; sourceTree = "<group>"; };
+		84911E6E5F8EFA4FA4B0D5ED /* RegisterTemplateIOS13.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RegisterTemplateIOS13.podspec; path = ../RegisterTemplateIOS13.podspec; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA59DB82CCBC53989EE5E5D8 /* Pods-RegisterTemplateIOS13_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegisterTemplateIOS13_Example.debug.xcconfig"; path = "Target Support Files/Pods-RegisterTemplateIOS13_Example/Pods-RegisterTemplateIOS13_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CA6238B1023B99856B4AB8D3 /* Pods-RegisterTemplateIOS13_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegisterTemplateIOS13_Example.release.xcconfig"; path = "Target Support Files/Pods-RegisterTemplateIOS13_Example/Pods-RegisterTemplateIOS13_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -193,7 +193,6 @@
 				14560477156B2A0757C1A5BD /* Pods-RegisterTemplateIOS13_Tests.debug.xcconfig */,
 				402580B5B9FEAD51E8C91D06 /* Pods-RegisterTemplateIOS13_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +207,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				F9AF186CC39EF01E9786FAB0 /* [CP] Embed Pods Frameworks */,
+				867FFD932C02EA00ECF1CC9D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -317,6 +317,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		867FFD932C02EA00ECF1CC9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RegisterTemplateIOS13_Example/Pods-RegisterTemplateIOS13_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RegisterTemplateIOS13/RegisterTemplateIOS13.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RegisterTemplateIOS13.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RegisterTemplateIOS13_Example/Pods-RegisterTemplateIOS13_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DE46BFE975C430AC84435687 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -337,24 +355,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F9AF186CC39EF01E9786FAB0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RegisterTemplateIOS13_Example/Pods-RegisterTemplateIOS13_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RegisterTemplateIOS13/RegisterTemplateIOS13.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RegisterTemplateIOS13.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RegisterTemplateIOS13_Example/Pods-RegisterTemplateIOS13_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -449,7 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -482,7 +482,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
